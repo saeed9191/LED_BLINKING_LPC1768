@@ -18,10 +18,10 @@ int main()
     while(1)
     {
         LPC_GPIO2->FIOSET = 0x00000001;     // Make the PIN 2.0 as high------->> it mean's that you have to connect the Positive leg of LED on this PIN:)   
-        delay_ms(100);
+        delay_ms(1000);
 
         LPC_GPIO2->FIOCLR = 0xffffffff;     // Make all the Port pins as low ------>> it can to be 0x00000001 but i do 0xffffffff because of Noise:)
-        delay_ms(100);
+        delay_ms(1000);
     }
 }
 
